@@ -34,9 +34,3 @@ The application architecture is strictly modular, separated into three distinct 
 
 ---
 
-## 🚀 How to Run Locally
-
-1. **Clone the Repository:**
-   ```bash
-   git clone [https://github.com/ali-web-1245/even-app.git](https://github.com/ali-web-1245/even-app.git)
-
