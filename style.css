@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: myanimation 2s infinite;
+}
+.container{
+    background-color: rgb(77, 96, 90);
+    width: 400px;
+    height: 250PX;
+    padding: 50px 50px;
+    border-radius: 20px;
+}
+.container input{
+    padding: 12px 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(248, 241, 241);
+    font-size: 14px;
+}
+.container button{
+    padding: 10px 30px;
+    background-color: rgb(201, 208, 213);
+    border: none;
+    border-radius: 10px;
+    background-color: greenyellow;
+}
+.box{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(239, 232, 232);
+    margin: 20px 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes myanimation{
+    0%{
+        background:linear-gradient(135deg,#cd1225,#511616,#d71f28);
+    }
+    30%{
+        background:linear-gradient(135deg,#9def10,#5b7118,#a9e511);
+    }
+    50%{
+        background:linear-gradient(135deg,#1ce2e6,#0d6c73,#14dbdf);
+    }80%{
+        background:linear-gradient(135deg,#12cd31,#204126,#40dc5a);
+    }
+    100%{
+        background:linear-gradient(135deg,#0c56b2,#0b3d7a,#3683e3);
+    }
+}
+
+
+
+
+
+
+/* Tablet screen */
+@media (max-width: 768px){
+    .container{
+        width: 80%;
+        height: auto;
+        padding: 30px;
+    }
+
+    .box{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .container input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container button{
+        width: 100%;
+    }
+}
+
+
+/* Mobile screen */
+@media (max-width: 480px){
+    body{
+        padding: 15px;
+    }
+
+    .container{
+        width: 100%;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    .container input{
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .container button{
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .box{
+        height: 80px;
+        font-size: 14px;
+    }
+}
